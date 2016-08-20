@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: pinterest_clase_development
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: pinterest_clase_test
+  pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: pinterest_clase_production
+  pool: 5

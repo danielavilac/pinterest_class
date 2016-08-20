@@ -1,0 +1,10 @@
+<%= form_for @pin do |f| %>
+  <%= f.label "Title" %>
+  <%= f.text_field :title %>
+  <%= f.label "Description" %>
+  <%= f.text_field :description %>
+  <%= f.hidden_field :url %>
+  <%= f.hidden_field :user_id %>
+  <%= f.submit %>
+<% end %>
+<%= image_tag params[:url], class: 'preview' %>

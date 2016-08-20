@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pinterest</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="navbar">
+    <%= current_user.full_name %>
+    <%= link_to 'logout', logout_path, method: :delete %>
+  </div>
+
+  <p class="error"><%= flash[:error] %></p>
+  <p class="succeed"><%= flash[:notice] %></p>
+
+  <%= yield %>
+
+</body>
+</html>
