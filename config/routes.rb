@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create]
   resources :users, only: [:create, :update]
   resources :pins, only: [:index, :new, :create]
+  resources :boards
 end
